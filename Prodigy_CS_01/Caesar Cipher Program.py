@@ -22,7 +22,10 @@ def caesar_cipher():
             print("The encoded text is: " + encoded)
 
         elif option == 2:
-            text = encoded
+            print("Enter Encrypted Text to be decoded: ")
+            text = input()
+            print("Enter shift value: ")
+            shift = int(input())
             decoded = ""
             for char in text:
                 if char.isalpha():
