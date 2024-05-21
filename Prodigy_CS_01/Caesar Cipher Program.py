@@ -23,11 +23,11 @@ def caesar_cipher():
 
         elif option == 2:
             print("Enter Encrypted Text to be decoded: ")
-            text = input()
+            ciphertext = input()
             print("Enter shift value: ")
             shift = int(input())
             decoded = ""
-            for char in text:
+            for char in ciphertext:
                 if char.isalpha():
                     ascii_offset = 97 if char.islower() else 65
                     decoded += chr((ord(char) - ascii_offset - shift) % 26 + ascii_offset)
